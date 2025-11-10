@@ -1,0 +1,16 @@
+rmcs_executor:
+  ros__parameters:
+    update_rate: 1000.0
+    components:
+      - rmcs_core::test::OutputTest -> output
+      - rmcs_core::test::InputTest -> input
+
+output:
+  ros__parameters:
+    motor_right: /test/motor_control_velocity_right
+    motor_left: /test/motor_control_velocity_left
+
+input:
+  ros__parameters:
+    motor_right: /test/motor_control_velocity_right
+    motor_left: /test/motor_control_velocity_left
