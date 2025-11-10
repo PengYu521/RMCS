@@ -1,0 +1,22 @@
+components:
+  - name: component_a
+    type: sin_cos_module/ComponentA
+    parameters:
+      omega: 3.0
+    outputs:
+      - name: sin_omega_t
+        target: component_b.inputs.sin_omega_t
+      - name: cos_omega_t
+        target: component_b.inputs.cos_omega_t
+  - name: component_b
+    type: sin_cos_module/ComponentB
+    outputs:
+      - name: sum_sin_cos
+        target: value_broadcaster.inputs.sum_sin_cos
+  - name: value_broadcaster
+    type: rmcs_core::broadcaster::ValueBroadcaster
+    ros_parameters:
+      forward_list:
+        - /sin_cos/sin_omega_t
+        - /sin_cos/cos_omega_t
+        - /sin_cos/sum_sin_cos

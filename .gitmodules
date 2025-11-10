@@ -10,3 +10,6 @@
 [submodule "rmcs_ws/src/serial"]
 	path = rmcs_ws/src/serial
 	url = https://github.com/Alliance-Algorithm/ros2-serial.git
+[submodule "rmcs_ws/src/rmcs_core/src/controller/rmcs_core"]
+	path = rmcs_ws/src/rmcs_core/src/controller/rmcs_core
+	url = https://github.com/PengYu521/RMCS.git
