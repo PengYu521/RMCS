@@ -24,8 +24,8 @@ public:
         register_input("/remote/switch/left", remote_left_switch_);
         register_input("/remote/switch/right", remote_right_switch_);
 
-        register_input("/velocity", actual_velocity_right_);
-        register_input("/velocity", actual_velocity_left_);
+        register_input("/m2006_right/velocity", actual_velocity_right_);
+        register_input("/m2006_left/velocity", actual_velocity_left_);
 
         register_output("/example/m2006_right/control_velocity", motor_control_velocity_right);
         register_output("/example/m2006_left/control_velocity", motor_control_velocity_left);

@@ -104,10 +104,5 @@
   <class type="rmcs_core::example::RemoteControllerExample" base_class_type="rmcs_executor::Component">
     <description>Test plugin.</description>
   </class>
-  <class type="rmcs_core::test::OutputTest" base_class_type="rmcs_executor::Component">
-    <description>Test plugin.</description>
-  </class>
-  <class type="rmcs_core::test::InputTest" base_class_type="rmcs_executor::Component">
-    <description>Test plugin.</description>
-  </class>
+  
 </library>
